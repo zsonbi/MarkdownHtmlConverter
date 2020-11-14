@@ -247,10 +247,6 @@ namespace MarkdownHtmlConverter
             output.Add("<body>");
             for (int i = 0; i < input.Length; i++)
             {
-                if (i == 13)
-                {
-                    Console.WriteLine("idk");
-                }
                 output.Add(CheckRow(input[i]));
             }
             //If the paragraph was no ended with an empty line
