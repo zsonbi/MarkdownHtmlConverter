@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MarkdownHtmlConverter
 {
@@ -10,7 +7,7 @@ namespace MarkdownHtmlConverter
     {
         private List<string> output;//The converted lines
         private bool CurrentlyParagraph = false;//A bool so the program knows if it should close a paragraph or open one
-        private Dictionary<string, string[]> keyToHtml = new Dictionary<string, string[]>(); //The keys and the appropiate openning and closing tags
+        private Dictionary<string, string[]> keyToHtml = new Dictionary<string, string[]>(); //The keys and the appropiate opening and closing tags
         private Stack<string[]> InsideParametersStack = new Stack<string[]>(); //So we can close the thing at the end of the paragraph in order
         private byte maxSizeOfMarkDowns = 2; //the maximum size of the markdown parameters
 
@@ -266,4 +263,4 @@ namespace MarkdownHtmlConverter
             return output.ToArray();
         }
     }
-}
+}//Bevan bejezve a nagy mű, igen, a gép forog, az alkotó pihen
